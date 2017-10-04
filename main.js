@@ -1,8 +1,8 @@
 // 定数宣言 (必要に応じて書き換えてください)
 const TARGET_FOLDER = './samples'; // キャプチャーしたいHTMLのフォルダー
 const OUTPUT_FOLDER = './imgs'; // 保存先のフォルダー
-const CAPTURE_W = '960'; // キャプチャーサイズ(幅：単位px)
-const CAPTURE_H = '960'; // キャプチャーサイズ(高さ：単位px)
+const VIEWPORT_W = '1024'; // viewportの横幅(幅：単位px)
+const VIEWPORT_H = '768'; // viewportの高さ(幅：単位px)
 const IGNORE_LIST = ['.DS_Store', 'Thumbs.db', '.idea']; // 無視リスト
 const PHANTOM_JS_FILE = 'render.js'; // PhantomJSのパス
 
@@ -24,8 +24,8 @@ fs.readdir(TARGET_FOLDER, (err, files) => {
         PHANTOM_JS_FILE,
         targetFilePath,
         outputFilePath,
-        CAPTURE_W,
-        CAPTURE_H
+        VIEWPORT_W,
+        VIEWPORT_H
       ];
       const childPromise = new Promise((resolve) => {
         // ここでrender.jsをphantomjsで呼び出して実行する

@@ -1,17 +1,15 @@
 const page = require('webpage').create();
 const system = require('system');
 
-// argsは、phantom.argsでアクセスできる。
+// 引数は、system.argsでアクセスできる。
 const address = system.args[1];
 const output = system.args[2];
-const width = system.args[3];
-const height = system.args[4];
+const VIEWPORT_W = system.args[3];
+const VIEWPORT_H = system.args[4];
 
 page.viewportSize = {
-  width: width,
-  height: height,
-  margin: '0px',
-  padding: '0px'
+  width: VIEWPORT_W,
+  height: VIEWPORT_H,
 };
 
 page.open(address,
