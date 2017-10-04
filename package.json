@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "capture" : "node main.js"
+  },
+  "devDependencies": {
+    "phantomjs": "^2.1.7"
+  }
+}

@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>CreateJS入門サイト - ICS MEDIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="referrer" content="unsafe-url"/>
+  <meta property="article:author" content="https://www.facebook.com/icswebjp"/>
+  <meta property="og:locale" content="ja_JP"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="CreateJS入門サイト - ICS MEDIA"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:url" content="https://ics.media/tutorial-createjs/index.html"/>
+  <meta property="og:site_name" content="ICS MEDIA"/>
+  <meta property="og:image" content="https://ics.media/tutorial-createjs/imgs/summary_large_image.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:description" content="このサイトはHTML5 Canvasのフレームワーク「CreateJS」の入門サイトです。canvas要素を使ってWebサイトに動きのある表現を取り入れましょう。"/>
+  <meta name="twitter:title" content="CreateJS入門サイト - ICS MEDIA"/>
+  <meta name="twitter:site" content="@icsweb"/>
+  <meta name="twitter:image" content="https://ics.media/tutorial-createjs/imgs/summary_large_image.jpg"/>
+  <meta property="article:published_time" content="2015-11-22T00:00:00+09:00"/>
+  <meta property="article:modified_time" content="2016-10-24T00:00:00+09:00"/>
+  <meta property="og:updated_time" content="2016-10-24T00:00:00+09:00"/>
+  <meta name="date" content="2016-10-24T00:00:00+09:00"/>
+
+  <link rel="icon" sizes="16x16 32x32 48x48 128x128 256x256" href="https://ics.media/wp-content/themes/icslab/img/favicon.ico"/>
+  <link rel="stylesheet" type='text/css' href="https://ics.media/tutorial-createjs/styles/css/style.css"/>
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Source+Code+Pro'/>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="tutorial">
+<div id="container">
+  <div id="header-always">
+    <div id="header-wrap">
+      <h1>
+        <a href="https://ics.media/"><span class="logoBlog"><img src="https://ics.media/tutorial-createjs/imgs/logo-blog.png" alt="ICS MEDIA - インタラクションデザイン×ウェブテクノロジー" width="477" height="26"/></span></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="https://ics.media/feed/atom" target="_blank"><i class="fa fa-rss"></i></a></li>
+          <li><a href="https://www.facebook.com/icswebjp" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/icsweb" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ================================== -->
+    <!-- パンくず -->
+    <!-- ================================== -->
+    <div id="header-breadcrumb">
+      <div class="wrap">
+        <ul class="breadcrumb">
+          <!-- 第1階層 -->
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="https://ics.media" itemprop="url">
+              <i class="fa fa-homze"></i> <span itemprop="title">ICS MEDIA</span>
+            </a>
+          </li>
+
+          <!-- 第2階層 -->
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="index.html" itemprop="url">
+              <i class="fa fa-folder-open"></i> <span itemprop="title">HTML5 と CreateJS で学ぶインタラクションデザイン</span>
+            </a>
+          </li>
+
+          <!-- 第3階層 -->
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <i class="fa fa-pencil-square-o"></i> <span itemprop="title">CreateJS入門サイト</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<article itemscope itemtype="http://schema.org/Article">
+
+  <!-- メインビジュアル -->
+  <div id="archive-image-wrap">
+    <iframe src="https://ics.media/wp-content/themes/icslab/special/151118_createjs_title/archives.html"></iframe>
+    <div class="title">
+      <header>
+        <p>HTML5 と CreateJS で学ぶインタラクションデザイン</p>
+        <h1 itemprop="name">CreateJS入門サイト</h1>
+      </header>
+    </div>
+  </div>
+
+  <div id="wrap">
+    <div id="main">
+      <div class="content">
+        <div class="pageContentContainer">
+          <div class="article">
+            <div class="text-left link-index">
+              <a href="index.html" class="btn btn-secondary btn-sm" data-toggle="tooltip" data-placement="right" title="目次へ戻る">
+                <i class="fa fa-list-ul"></i>
+                目次
+              </a>
+            </div>
+
+            <!-- ============================================= -->
+            <!-- MarkDown から出力はここから -->
+            <section itemprop="articleBody" class="aritcleBody">
+              <p>このサイトはHTML5 Canvasのフレームワーク「<a href="http://www.createjs.com/easeljs">CreateJS</a>」の入門サイトです。初学者から学べるように基本的な<strong>CreateJSの使い方</strong>から解説しつつ、発展的な内容までまとめています。このサイトを通して、webでのインタラクションデザインについて学んでいきましょう。</p>
+              <h2>導入編</h2><p><img src="https://ics-creative.github.io/tutorial-createjs/imgs/title_createjs.jpg" /></p>
+              <p>webのリッチコンテンツを作るためのフレームワーク「CreateJS」。どのような場面で利用されるのか、どういった表現が可能なのかという点を中心に、概要と導入方法を説明します。</p>
+              <ul>
+                <li><a href="basic.html">CreateJS とは</a></li>
+                <li><a href="basic_showcase.html">CraeteJS の事例</a></li>
+                <li><a href="quickstart.html">簡単なサンプルを試そう</a></li>
+                <li><a href="debug.html">ブラウザの開発ツールの使い方を抑えよう</a></li>
+              </ul>
+              <h2>CreateJS の基本的な使い方</h2><p><img src="https://ics-creative.github.io/tutorial-createjs/imgs/title_shape.jpg" /></p>
+              <h3>描画の基本</h3><p>グラフィックの描き方からテキストや画像の表示といったCreateJSの基本的な使い方を一つ一つ覚えていきましょう。表示オブジェクトというインタラクションデザインを作る上で必要不可欠な概念を解説します。</p>
+              <ul>
+                <li><a href="displayobject.html">表示オブジェクトの基本</a></li>
+                <li>シェイプの表示<ul>
+                  <li><a href="shape_fill_stroke.html">線と塗り</a></li>
+                  <li><a href="shape_color.html">色の指定</a></li>
+                  <li><a href="shape_draw.html">様々な図形の描画</a></li>
+                </ul>
+                </li>
+                <li><a href="text.html">テキストの表示</a></li>
+                <li><a href="bitmap.html">画像の表示</a></li>
+                <li>親子構造<ul>
+                  <li><a href="nest.html">表示オブジェクトのグループ化</a></li>
+                  <li><a href="displayobject_remove.html">表示オブジェクトの削除</a></li>
+                </ul>
+                </li>
+              </ul>
+              <h3>モーションの実装</h3><p>時間経過の処理を学びましょう。時間経過処理はモーション/アニメーションの制作の基本となります。CreateJSでは、<code>createjs.Ticker</code>クラスがその中心的な役割を担っています。</p>
+              <ul>
+                <li><a href="ticker.html">Ticker の使い方</a></li>
+              </ul>
+              <h2>初級編</h2><p><img src="https://ics-creative.github.io/tutorial-createjs/imgs/title_clock.jpg" /></p>
+              <h3>ユーザーインタラクションの実装</h3><p>マウスやキーボードなど、パソコンでのユーザー入力の制御方法を学びましょう。UI(ユーザーインターフェース)の具体的な一例としてボタンの作成方法も解説します。</p>
+              <ul>
+                <li>マウス操作 (基本)<ul>
+                  <li><a href="mouse_xy.html">マウス座標</a></li>
+                  <li><a href="mouse_click.html">クリックイベント</a></li>
+                  <li><a href="mouse_over.html">マウスオーバー</a></li>
+                  <li><a href="mouse_drag.html">ドラッグアンドドロップ</a></li>
+                  <li><a href="mouse_touch.html">タッチデバイス対応</a></li>
+                </ul>
+                </li>
+                <li>マウス操作 (応用)<ul>
+                  <li><a href="button.html">ボタンの作成</a></li>
+                </ul>
+                </li>
+                <li>キーボード操作<ul>
+                  <li><a href="keyboard_basic.html">キーボードイベントの基本</a></li>
+                  <li><a href="keyboard_ship.html">キーボードで自機を操作</a></li>
+                </ul>
+                </li>
+                <li><a href="hittest.html">当たり判定</a></li>
+              </ul>
+              <h3>サンプル (初級編)</h3><p>ここまで学習した内容の理解を深めるべく、サンプル制作に挑戦ください。まずは自分でコードを書いていくといいでしょう。困ったら完成形のサンプルのコードを参照してください。</p>
+              <ul>
+                <li><a href="clock_digital.html">デジタル時計の作成</a></li>
+                <li><a href="clock.html">アナログ時計の作成</a></li>
+                <li><a href="game_pazzle.html">パズル</a></li>
+              </ul>
+              <h2>中級編</h2><p><img src="https://ics-creative.github.io/tutorial-createjs/imgs/title_trigonometry.jpg" /></p>
+              <h3>トゥイーンモーションの実装</h3><p>トゥイーンを使えば、少ないコードで多彩なモーションを手軽に実装することができます。トゥイーンは特にUI(ユーザーインターフェース)の実装で役立ちます。</p>
+              <ul>
+                <li><a href="tween.html">トゥイーンの作成方法</a></li>
+                <li><a href="tween_api.html">トゥイーン実装方法まとめ</a></li>
+              </ul>
+              <h3>数学の活用</h3><p>高校数学で学ぶ三角関数。三角関数は将来、何の役に立つのかと思っていた方も多いのではないでしょうか。インタラクションデザインの世界では三角関数は頻繁に利用します。簡単なサンプルを通して、三角関数の活用方法を学んでいきましょう。</p>
+              <ul>
+                <li>三角関数<ul>
+                  <li><a href="math_basic.html">三角関数の活用</a></li>
+                  <li><a href="math_trigonometry.html">三角関数をモーションに使う</a></li>
+                </ul>
+                </li>
+                <li>色の制御<ul>
+                  <li><a href="color_hsl.html">HSLカラー</a></li>
+                </ul>
+                </li>
+              </ul>
+              <h3>マルチメディア</h3><ul>
+              <li><a href="sound.html">音声(サウンド)の再生</a></li>
+            </ul>
+              <h3>サンプル (中級編)</h3><p>中級編までで学習した内容の理解を深めるべく、サンプル制作に挑戦してみましょう。</p>
+              <ul>
+                <li><a href="ball.html">物理演算</a></li>
+                <li><a href="slideshow.html">カルーセル(スライドショー)</a></li>
+              </ul>
+              <h2>応用編</h2><p><img src="https://ics-creative.github.io/tutorial-createjs/imgs/title_particle.jpg" /></p>
+              <h3>サンプル(応用編)</h3><p>様々な応用サンプルに挑戦してみましょう。表現のリッチさに比例してコード量も増えますが、これまでに解説した内容を組み合わせた内容になっています。</p>
+              <ul>
+                <li><a href="fractal.html">フラクタル図形</a></li>
+                <li><a href="particle.html">パーティクルシステム</a></li>
+                <li><a href="game_shooting.html">シューティングゲーム</a></li>
+                <li><a href="paint.html">お絵描きツール</a></li>
+              </ul>
+              <h2>Adobe Animate CCを使おう</h2><p><img src="https://ics-creative.github.io/tutorial-createjs/imgs/title_animatecc.jpg" /></p>
+              <p>Adobe Animate CC(旧Flash Professional CC)というアプリケーションを使えば、CreateJS用のグラフィックやモーションをコードを書かなくても作ることができます。コードが書くのは苦手という方はAnimate CCでCreateJSコンテンツを作ってみるといいでしょう。</p>
+              <ul>
+                <li><a href="adobe_animate_basic.html">Adobe Animate CC の使い方</a></li>
+              </ul>
+              <p>CreateJS入門サイトでAnimate CCを扱うのには理由があります。Animate CCでは「HTML5 Canvasドキュメント」が作れます。このHTML5 Canvasドキュメントというのはその名の通り、Animate CCで作ったコンテンツをHTMLの<code>canvas</code>要素で再生するというものですが、その再生エンジンにCreateJSが採用されているのです。</p>
+              <p>再生エンジンにCreateJSが使われているというとイメージしづらいかもしれませんが、アニメーションとCreateJSが連携しやすいということを意味します。次のページでは、Animate CCで作ったCreateJSコンテンツを、プログラムで連携する方法を解説します。</p>
+              <ul>
+                <li><a href="adobe_animate.html">Adobe Animate CC と CreateJS の連携 (基本編)</a></li>
+                <li><a href="adobe_animate_bitmaps.html">Adobe Animate CC と CreateJS の連携 (ビットマップ含む編)</a></li>
+                <li><a href="adobe_animate_spritesheet.html">Adobe Animate CC と CreateJS の連携 (スプライトシート編)</a></li>
+              </ul>
+              <h2>その他</h2><ul>
+              <li><a href="fullscreen.html">スマホブラウザで全画面に表示する対応</a></li>
+            </ul>
+
+              <p></p>
+              <p></p>
+
+            </section>
+            <!-- MarkDown から出力はここまで -->
+            <!-- ============================================= -->
+
+
+            <div class="text-center link-index">
+              <a href="index.html" class="btn btn-primary">
+                <i class="fa fa-list-ul"></i>
+                目次に戻る
+              </a>
+              <hr/>
+            </div>
+
+            <div class="text-center">
+              <a class="share-twitter btn btn-secondary btn-sm">
+                <i class="fa fa-twitter"></i>
+                Twitterでツイートする
+              </a>
+              <a class="share-facebook btn btn-secondary btn-sm">
+                <i class="fa fa-facebook"></i>
+                Facebookでシェアする
+              </a>
+            </div>
+
+            <hr/>
+
+            <div class="text-center">
+              <a href="/" class="btn btn-secondary">
+                <i class="fa fa-home"></i>
+                サイトトップに戻る
+              </a>
+            </div>
+
+            <hr/>
+
+            <footer>
+              <div class="text-data">
+                <div>公開日 : <span itemprop="datePublished" content="2015-11-22">2015年11月22日</span>
+                  / 最終更新日 :
+                  <time itemprop="dateModified" datetime="2016-10-24">2016年10月24日</time>
+                  / 著者 :
+                  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                      <span itemprop="name"><a href="https://twitter.com/clockmaker"><a href="https://twitter.com/clockmaker">池田 泰延</a></a>
+                      </span>
+                    </span></div>
+                <div>※この記事は CreateJS の2015年11月26日バージョンを元に執筆しています。</div>
+              </div>
+            </footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</article>
+
+<div id="footer-bottom" class="cf">
+  <div id="footer-menu-container" class="default">
+    <div class="footer-menu">
+      <div id="footer-menu-inside">
+        <nav>
+          <ul id="footer-menu">
+            <li><a href="https://ics.media/feed/atom" target="_blank"><i class="fa fa-rss fa-3"></i> RSS</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/icswebjp" target="_blank"><i class="fa fa-facebook-square fa-3"></i>
+                Facebook</a></li>
+            <li><a href="http://ics-web.jp/blog/recruit" target="_blank">採用情報</a></li>
+            <li><a href="http://ics-web.jp/blog/" target="_blank">最新事例</a></li>
+            <li><a href="http://ics-web.jp/blog/contact" target="_blank">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-sections cf">
+
+    <div class="footer-section large">
+      <p class="widget_title">CreateJSのサンプル/事例</p>
+
+      <p>作例をみてCreateJSで実現可能な表現のインスピレーションを得ましょう。</p>
+      <ul>
+        <li><a href="http://lab.gskinner.com" target="_blank"><i class="fa fa-external-link"></i> gskinner lab</a></li>
+        <li><a href="http://sandbox.createjs.com/PlanetaryGary/" target="_blank"><i class="fa fa-external-link"></i>
+          Planetary Gary</a></li>
+        <li><a href="http://ics-web.jp/projects/pollenmap/" target="_blank"><i class="fa fa-external-link"></i>
+          日本全国花粉飛散マップ</a></li>
+        <li><a href="http://ics-web.jp/projects/particle-develop/" target="_blank"><i class="fa fa-external-link"></i>
+          Particle Develop</a></li>
+        <li>
+          <a href="http://jsdo.it/tag/createjs?search_order=favorite" target="_blank"><i class="fa fa-external-link"></i>
+            jsdo.it</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section large">
+      <p class="widget_title">CreateJSの公式リファレンス</p>
+
+      <p><a href="http://createjs.com/" target="_blank">CreateJS</a>は4つのライブラリからなるJavaScriptフレームワークです。</p>
+      <ul>
+        <li>
+          <a href="http://www.createjs.com/docs/easeljs/modules/EaselJS.html" target="_blank"><i class="fa fa-external-link"></i>
+            EaselJS (英語)</a></li>
+        <li>
+          <a href="http://www.createjs.com/docs/tweenjs/modules/TweenJS.html" target="_blank"><i class="fa fa-external-link"></i>
+            TweenJS (英語)</a></li>
+        <li>
+          <a href="http://www.createjs.com/docs/soundjs/modules/SoundJS.html" target="_blank"><i class="fa fa-external-link"></i>
+            SoundJS (英語)</a></li>
+        <li>
+          <a href="http://www.createjs.com/docs/preloadjs/modules/PreloadJS.html" target="_blank"><i class="fa fa-external-link"></i>
+            PreloadJS (英語)</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-section large">
+      <p class="widget_title">CreateJS フォーラム</p>
+      <p>わからないことがあれば、フォーラムで質問してみましょう。</p>
+      <a href="http://qiita.com/tags/CreateJS/items" target="_blank"><i class="fa fa-external-link"></i> Qiita 技術情報共有サービス</a><br/>
+      <a href="https://forums.adobe.com/community/international_forums/japanese/animate" target="_blank"><i class="fa fa-external-link"></i> Animate CC コミュニティフォーラム</a><br/>
+      <a href="https://groups.google.com/forum/#!forum/createjs-jp-open-community" target="_blank"><i class="fa fa-external-link"></i> CreateJS Open Comunity</a>
+
+      <p class="widget_title">CreateJS コミュニティー</p>
+      <a href="http://eventdots.jp/event/search?keyword=createjs&pref=&from=&to=&sort=started_desc" target="_blank"><i class="fa fa-external-link"></i> 勉強会・イベント一覧 (dots)</a><br/>
+      <a href="https://www.facebook.com/CreateJS" target="_blank"><i class="fa fa-external-link"></i> CreateJS Facebookページ</a><br/>
+    </div>
+
+  </div>
+
+  <div id="copyright">Copyright &copy; ICS INC. All Rights Reserved.</div>
+</div>
+</body>
+</html>
