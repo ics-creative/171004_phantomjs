@@ -11,7 +11,6 @@ const fs = require('fs');
 const childProcess = require('child_process');
 const phantomjs = require('phantomjs');
 const binPath = phantomjs.path;
-const render = 'render.js';
 
 
 fs.readdir(TARGET_FOLDER, (err, files) => {
